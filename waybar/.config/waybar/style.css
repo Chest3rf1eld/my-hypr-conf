@@ -6,7 +6,10 @@
 }
 
 window#waybar {
-    background-color: transparent;
+  background: rgba(20, 20, 20, 0.9);
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
 }
 
 #workspaces{
