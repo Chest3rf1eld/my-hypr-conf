@@ -1,0 +1,102 @@
+{
+  "layer": "top",
+  "position": "top",
+
+  // Высота и внешние отступы бара
+  "height": 28,
+  "margin-top": 6,
+  "margin-bottom": 6,
+  "margin-left": 8,
+  "margin-right": 8,
+
+  // Модули
+  "modules-left": ["cpu", "memory", "mpd"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["tray", "idle_inhibitor", "pulseaudio", "clock"],
+
+  "hyprland/workspaces": {
+    "sort-by-name": true,
+    "on-click": "activate"
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 6
+  },
+
+  "clock": {
+    "locale": "C",
+    "format": " {:%H:%M}",
+    "format-alt": " {:%a, %b %d}"
+  },
+
+  "cpu": {
+    "format": "&#8239;   {usage}%",
+    "tooltip": false,
+    "on-click": "kitty -e htop"
+  },
+
+  "memory": {
+    "interval": 30,
+    "format": "    {used:0.2f}GB",
+    "max-length": 10,
+    "tooltip": false,
+    "warning": 70,
+    "critical": 90
+  },
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%   {format_source}",
+    "format-bluetooth": "{icon} {volume}% {format_source}",
+    "format-bluetooth-muted": " {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "🎧",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "mpd": {
+    "format": "{stateIcon} {artist} - {title}",
+    "format-disconnected": "🎶",
+    "format-stopped": "♪",
+    "interval": 10,
+    "consume-icons": {
+      "on": " "
+    },
+    "random-icons": {
+      "off": " ",
+      "on": " "
+    },
+    "repeat-icons": {
+      "on": " "
+    },
+    "single-icons": {
+      "on": "1 "
+    },
+    "state-icons": {
+      "paused": "",
+      "playing": ""
+    },
+    "tooltip-format": "MPD (connected)",
+    "tooltip-format-disconnected": "MPD (disconnected)",
+    "max-length": 35
+  }
+}
+
