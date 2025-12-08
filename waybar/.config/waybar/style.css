@@ -20,9 +20,9 @@ window#waybar {
 }
 
 #workspaces button{
-    border-radius: 15px;
+    border-radius: 10px;
     margin-right: 10px;
-    padding: 1px 10px;
+    padding: 1px 1px;
     font-weight: bolder;
     background-color: #181818;
 }
