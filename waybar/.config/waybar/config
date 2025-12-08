@@ -3,11 +3,11 @@
   "position": "top",
 
   // Высота и внешние отступы бара
-  "height": 28,
-  "margin-top": 6,
-  "margin-bottom": 6,
-  "margin-left": 8,
-  "margin-right": 8,
+  "height": 35,
+  "margin-top": 10,
+  "margin-bottom": 0,
+  "margin-left": 10,
+  "margin-right": 10,
 
   // Модули
   "modules-left": ["cpu", "memory", "mpd"],
