@@ -10,9 +10,15 @@
   "margin-right": 10,
 
   // Модули
-  "modules-left": ["cpu", "memory", "mpd"],
+  "modules-left": ["cpu", "memory", "mpd", "hyprland/language"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["tray", "idle_inhibitor", "pulseaudio", "clock"],
+
+  "hyprland/language": {
+    "format": "  {}",
+    "format-en": "EN",
+    "format-ru": "RU"
+  },
 
   "hyprland/workspaces": {
     "sort-by-name": true,
