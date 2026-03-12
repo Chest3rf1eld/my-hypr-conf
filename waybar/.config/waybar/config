@@ -32,7 +32,7 @@
 
   "clock": {
     "locale": "C",
-    "format": " {:%H:%M %d-%m-%Y}",
+    "format": " {:%H:%M %d.%m.%Y}",
     "format-alt": " {:%a, %b %d}"
   },
 
