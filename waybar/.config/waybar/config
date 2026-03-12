@@ -10,9 +10,9 @@
   "margin-right": 10,
 
   // Модули
-  "modules-left": ["cpu", "memory", "mpd", "hyprland/language"],
+  "modules-left": ["cpu", "memory", "mpd", "idle_inhibitor"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["tray", "idle_inhibitor", "pulseaudio", "clock"],
+  "modules-right": ["tray", "pulseaudio", "hyprland/language", "clock"],
 
   "hyprland/language": {
     "format": " {}",
